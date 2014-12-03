@@ -14,6 +14,10 @@ a:link, a:active {
 a:visited {
   color: #0099CC;
 }
+#page-wrapper {
+  width: 800px;
+  background-image: url:("msft_faux_columns.png");
+}
 #toolbar {
   width: 100%;
   height: 20px;
@@ -36,7 +40,7 @@ nav#toolbar ul,nav#sidebar-nav ul {
   list-style: none; padding-left: 0;
 }
 div#sidebar {
-  font-size: smaller; background-color: #FFCC00; width: 110px; padding: 3px;
+  font-size: smaller; width: 110px; padding: 3px; float: left; /* background-color: #FFCC00 */
 }
 div#sidebar p {
   margin-top: 30px; font-weight: bold; text-alighn:center;
@@ -51,10 +55,13 @@ footer {
   text-align: center;
 } 
 #go-form {
-  text-align: center; width: 550px; clear:both; padding-top: 4px;
+  text-align: center; width: 550px; clear:both; padding-top: 4px; background: white;
 }  
 #content {
-  width: 620px; padding: 3px;
+  width: 620px; padding: 3px; float: left; margin-left: 26px;
+}
+#ad-rotator {
+  margin-left: 136px;
 }
 img [alt="MICROSOFT: Where Do You Want To Go Today?"] {
 display: block; margin-bottom: 30px;  
@@ -69,6 +76,7 @@ nav#news {
     </style>
 	</HEAD>
 	<BODY>
+ <div id="page-wrapper">
 		<!--TOOLBAR_START-->
 		<nav id="toolbar">
 			<ul>
@@ -186,6 +194,6 @@ nav#news {
 
 			<br><A HREF="#" TARGET="_top">Information about Microsoft.com architecture</A>
 		</footer>
-
+    </div>
 	</BODY>
 </HTML>
